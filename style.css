@@ -29,11 +29,32 @@ height:100vh;
     font-size: 20px;
     font-style: italic;
 }
+#about-us {
+   padding: 20px;
+   background-color: #fffafa; /* Light background for contrast */
+   margin: 20px 0; /* Space around the section */
+   border-radius: 8px; /* Rounded corners */
+   background-color: rgb(255, 255, 255);
+}
+
+#about-us h2 {
+   color: #5e1323; /* Heading color */
+   font-size: 28px; /* Adjust font size */
+   text-align: center; /* Center the heading */
+   margin-bottom: 20px;
+   }
+
+#about-us p {
+   color: #100a0a; /* Text color */
+   font-size: 16px; /* Adjust font size */
+   line-height: 1.6; /* Line height for readability */
+}
+
 .banner-btn{
     margin: 70px auto 0;
 }
 .banner-btn a{
-    width: 100px;
+    width: 10%;
     text-decoration: none;
     display: inline-block;
     margin: 0 5px;
@@ -43,6 +64,7 @@ height:100vh;
     position: relative;
     z-index: 1;
     transition: color 0.5s;
+    text-align: center;
 }
 .banner-btn a span{
     width: 0;
@@ -59,22 +81,75 @@ height:100vh;
 .banner-btn a:hover {
     color: black;
 }
-.banner-btn1{
-    margin: 70px auto 0;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, sans-serif;
 }
-.banner-btn1 a{
-    width: 100px;
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 5px;
-    padding: 12px 0;
-    color: #fff;
-    border: 1px solid #fff;
-    position: relative;
-    z-index: 1;
-    transition: color 0.5s;
-    border-radius: 40px;
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+   background-color: #d2b8bd00; /* Header background color */
 }
+
+.logo img {
+   width: 200px; /* Adjust logo size */
+}
+
+.search-box {
+   display: block;
+   text-align: center;
+   margin: 0 auto;
+   align-items: center;
+   background-color: white;
+   padding: 10px;
+   border-radius: 40px;
+   border: 2px solid #a04458;
+   width: 37%; /* Adjust the width for a larger box */
+   transition: all 0.3s ease;
+}
+
+.search-box input {
+   border: none;
+   outline: none;
+   font-size: 16px;
+   width: 50%;
+   padding: 5px;
+   
+}
+
+.search-box button {
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+}
+
+.search-box button i {
+   font-size: 20px;
+   color: #510e1d;
+}
+
+.search-box:hover {
+   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.search-box:{
+   align-self: center;
+}
+
+@media screen and (max-width: 770px) {
+   .search-box {
+       width: 300px; /* Adjust for smaller screens */
+   }
+   
+   .logo img {
+       width: 120px; /* Adjust logo size for smaller screens */
+   }
+}
+
 .banner-btn1 a:hover {
     color: black;
 }
@@ -331,7 +406,7 @@ nav ul li a{
      /*--footer--*/
      #footer{
         padding: 100px 0 20px;
-        background: #bd3030;
+        background: #d3d1d1;
         position: relative;
 
      }
@@ -381,18 +456,19 @@ nav ul li a{
         transition: .5s;
 
      }
+  
      .social-links1 .fa-brands:hover{
         background: #105cc7;
         color: #fff;
         transform: translatey(-7px);
      }
      .social-links2 .fa-brands:hover{
-        background: #d71469;
+        background: #ef155a;
         color: #fff;
         transform: translatey(-7px);
      }
      .social-links3 .fa-brands:hover{
-        background: #ec0716;
+        background: #cd0000;
         color: #fff;
         transform: translatey(-7px);
      }
@@ -423,6 +499,27 @@ nav ul li a{
         top: 0;
         align-content: left;
          }
+         .social-links6 .fa:hover{
+            background: rgb(237, 179, 6);
+            color: #fff;
+            transform: translatey(-7px);
+         }
+         .social-links6 .fa{
+            height: 40px;
+            width: 40px;
+            font-size: 20px;
+            line-height: 40px;
+            border: 1px solid #510e1d;
+            color: #510e1d;
+            cursor:pointer;
+            transition: .5s;
+            text-align: center;
+         }
+         .social-links6{
+            
+            top: 0;
+            align-content: left;
+             }
      
      .social-links  p{
         font-size: 12px;
